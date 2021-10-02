@@ -1,0 +1,66 @@
+h1 {
+  color : #FFFFFF;   
+  font-family:georgia,times;
+  text-align: center;
+}
+
+body {
+ background-image: url("food-background.jpg");
+ background-size: cover;
+ background-position: center center;  
+}
+
+.center-block {
+  margin: auto;
+  display: block;
+}
+
+footer {
+  background-color: #000000;
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 5%;
+}
+
+header {
+  background-color: #04DD6D;
+  width: 100%;
+  padding: 1px;
+  margin-top: -10px;
+}
+
+input[type=text], textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 20px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+a:link {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.parent {
+    display: flex;
+}      
+
+.child {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #000000;
+    text-align: center;
+}
