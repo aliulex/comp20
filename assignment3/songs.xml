@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<List>
+  <Heading>Set List</Heading>
+  <Record>
+    <Title>Song: Lights Down Low</Title>
+    <Artist>Artist: MAX</Artist>
+    <Genre>Genre: Pop</Genre>
+    <Year>Year: 2016</Year>
+  </Record>
+  <Record>
+    <Title>Song: Closer</Title>
+    <Artist>Artist: Chainsmokers</Artist>
+    <Genre>Genre: Pop</Genre>
+    <Year>Year: 2016</Year>
+  </Record>
+  <Record>
+    <Title>Song: How Do You Sleep?</Title>
+    <Artist>Artist: Sam Smith</Artist>
+    <Genre>Genre: Pop</Genre>
+    <Year>Year: 2020</Year>
+  </Record>
+  <Record>
+    <Title>Song: Payphone</Title>
+    <Artist>Artist: Maroon 5</Artist>
+    <Genre>Genre: Pop</Genre>
+    <Year>Year: 2012</Year>
+  </Record>
+  <Record>
+    <Title>Song: Fake Love</Title>
+    <Artist>Artist: BTS</Artist>
+    <Genre>Genre: Kpop</Genre>
+    <Year>Year: 2018</Year>
+  </Record>
+  <Record>
+    <Title>Song: Flower Road</Title>
+    <Artist>Artist: Big Bang</Artist>
+    <Genre>Genre: Kpop</Genre>
+    <Year>Year: 2018</Year>
+  </Record>
+  <Record>
+    <Title>Song: Eight</Title>
+    <Artist>Artist: IU</Artist>
+    <Genre>Genre: Kpop</Genre>
+    <Year>Year: 2020</Year>
+  </Record>
+  <Record>
+    <Title>Song: Gurenge</Title>
+    <Artist>Artist: LiSA</Artist>
+    <Genre>Genre: Jpop</Genre>
+    <Year>Year: 2019</Year>
+  </Record>
+  <Record>
+    <Title>Song: Crossing Field</Title>
+    <Artist>Artist: LiSA</Artist>
+    <Genre>Genre: Jpop</Genre>
+    <Year>Year: 2013</Year>
+  </Record>
+  <Record>
+    <Title>Song: Unravel</Title>
+    <Artist>Artist: TK</Artist>
+    <Genre>Genre: Jpop</Genre>
+    <Year>Year: 2014</Year>
+  </Record>
+</List>

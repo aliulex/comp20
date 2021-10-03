@@ -1,0 +1,20 @@
+List {
+     color: #ffffff;
+     background-color : #808080;
+     width: 100%;
+}
+
+Heading {
+     color: #ff0000;
+     font-size : 40px;
+     background-color : #000000;
+}
+
+Heading, Title, Artist, Genre, Year {
+     display : block;
+}
+
+Title {
+     font-size : 25px;
+     font-weight : bold;
+}
