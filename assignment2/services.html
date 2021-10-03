@@ -38,8 +38,23 @@
       p {
         font-size: 18px;
       }
+      @media only screen and (max-width: 600px) {
+        .flex-container {
+          display: block;
+        }
+      }
     </style>
   </header>
+  <nav>
+    <div class="parent">
+      <div class="child">
+        <a href="services.html">About Us</a><br>
+      </div>
+      <div class="child">
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
   <body>
     <div class="about-us">
       <h2>About Us</h2>
@@ -81,14 +96,4 @@
       </div>
     </div>
   </body>
-  <footer>
-    <div class="parent">
-      <div class="child">
-        <a href="services.html">About Us</a><br>
-      </div>
-      <div class="child">
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
-  </footer>
 </html>
