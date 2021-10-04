@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Joe's Hotdog Stand</title>
+    <style>
+      h1 {
+        text-align: center;
+        background-color: #ff0000;
+      }
+      .parent {
+        display: flex;
+      }
+      .child {
+        flex: 1;
+        margin-right: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Joe's Hotdog Stand</h1>
+    <div class="parent">
+      <div class="child" style="text-align: right;">
+        <h2>Description</h2>
+        <script language="javascript">
+          hotdogs = prompt("How many hotdogs would you like?", "");
+          fries = prompt("How many fries would you like?", "");
+          drinks = prompt("How many drinks would you like?", "");
+          document.write(hotdogs + " x Hotdogs<br>");
+          document.write(fries + " x Fries<br>");
+          document.write(drinks + " x Drinks<br>");
+          document.write("<br>Subtotal");
+          document.write("<br>Discount");
+          document.write("<br>Subtotal after discount");
+          document.write("<br>Tax");
+          document.write("<br><br>Total");
+        </script>
+      </div>
+      <div class="child">
+        <h2>Amount</h2>
+        <script language="javascript">
+          hotdogs_price = hotdogs * 3.75;
+          fries_price = fries * 2;
+          drinks_price = drinks * 1.5;
+          subtotal = hotdogs_price + fries_price + drinks_price;
+          document.write("$" + hotdogs_price);
+          document.write("<br>$" + fries_price);
+          document.write("<br>$" + drinks_price);
+          document.write("<br><br>$" + subtotal);
+          if (subtotal >= 20) {
+            discount = subtotal * .1;
+          }
+          else {
+            discount = 0;
+          }
+          document.write("<br>-$" + discount);
+          subtotal -= discount;
+          document.write("<br>$" + subtotal);
+          tax = subtotal * .0625;
+          tax = tax.toFixed(2);
+          document.write("<br>$" + tax);
+          total = subtotal + parseFloat(tax);
+          document.write("<br><br>$" + total);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
