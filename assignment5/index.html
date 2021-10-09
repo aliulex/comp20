@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Lottery Simulator</title>
+  </head>
+  <body>
+    <h1>Lottery Simulator</h1>
+    <script language="javascript">
+      winning_nums = new Array(5);
+      for (i = 0; i < winning_nums.length; i++) {
+        winning_nums[i] = Math.floor(Math.random() * 48) + 1;
+      }
+      lucky_num = Math.floor(Math.random() * 18) + 1;
+      winning_nums = winning_nums.sort();
+      document.write("Winning Numbers: ");
+      for (j = 0; j < winning_nums.length; j++) {
+        document.write(winning_nums[j] + " ");
+      }
+      document.write("<br>Lucky Ball: " + lucky_num);
+      
+      input = prompt("Enter 5 numbers (each separted by a space)", "");
+      your_nums = input.match(/\d+/g);
+      your_nums = your_nums.sort();
+      document.write("<br>Your Numbers: ");
+      for (k = 0; k < your_nums.length; k++) {
+        document.write(your_nums[k] + " ");
+      }
+      your_lucky = prompt("Enter a number for the lucky ball", "");
+      document.write("<br>Your Lucky Ball: " + your_lucky);
+      
+      var matches = 0;
+      for (a = 0; a < your_nums.length; a++) {
+        for (b = 0; b < winning_nums.length; b++) {
+          if (your_nums[a] == winning_nums[b]) {
+            matches++;
+          }
+        }
+      }
+      document.write("<br>Normal Matches: " + matches);
+      
+      var lucky_match;
+      document.write("<br>Lucky Match: ");
+      if (your_lucky == lucky_num) {
+        lucky_match = true;
+        document.write("Yes");
+      }
+      else {
+        lucky_match = false;
+        document.write("No");
+      }
+      
+      document.write("<br>Your Prize: ");
+      if ((matches == 5) && lucky_match) {
+        document.write("$7,000 a WEEK for LIFE");
+      }
+      else if (matches == 5) {
+        document.write("$25,000 a YEAR for LIFE");
+      }
+      else if ((matches == 4) && lucky_match) {
+        document.write("$5,000");
+      }
+      else if (matches == 4) {
+        document.write("$200");
+      }
+      else if ((matches == 3) && lucky_match) {
+        document.write("$150");
+      }
+      else if (matches == 3) {
+        document.write("$20");
+      }
+      else if ((matches == 2) && lucky_match) {
+        document.write("$25");
+      }
+      else if (matches == 2) {
+        document.write("$3");
+      }
+      else if ((matches == 1) && lucky_match) {
+        document.write("$6");
+      }
+      else if (lucky_match) {
+        document.write("$4");
+      }
+      else {
+        document.write("$0");
+      }
+    </script>
+  </body>
+</html>
