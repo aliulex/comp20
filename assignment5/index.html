@@ -10,7 +10,9 @@
         winning_nums[i] = Math.floor(Math.random() * 48) + 1;
       }
       lucky_num = Math.floor(Math.random() * 18) + 1;
-      winning_nums = winning_nums.sort();
+      winning_nums.sort(function(a,b) {
+        return a-b;
+      });
       document.write("Winning Numbers: ");
       for (j = 0; j < winning_nums.length; j++) {
         document.write(winning_nums[j] + " ");
@@ -19,7 +21,9 @@
       
       input = prompt("Enter 5 numbers (each separted by a space)", "");
       your_nums = input.match(/\d+/g);
-      your_nums = your_nums.sort();
+      your_nums.sort(function(a,b) {
+        return a-b;
+      });
       document.write("<br>Your Numbers: ");
       for (k = 0; k < your_nums.length; k++) {
         document.write(your_nums[k] + " ");
