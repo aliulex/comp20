@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Amicable Numbers</title>
+  </head>
+  <body>
+    <form>
+      First Number: <input type="text" id="first"><br><br>
+      Second Number: <input type="text" id="second"><br><br>
+      <input type="button" value="Submit" onclick="check()"><br><br>
+      <!-- <div>
+        <p id="result">The numbers: xxx and yyy are amicable</p>
+      </div> -->
+    </form>
+    <script language="javascript">
+      function check () {
+        firstnum = document.getElementById("first").value;
+        secondnum = document.getElementById("second").value;
+        factorsOfFirst = new Array;
+        factorsOfSecond = new Array;
+        sum1 = getFactors(factorsOfFirst, firstnum);
+        sum2 = getFactors(factorsOfSecond, secondnum);
+        document.write("Factors of first number (" + firstnum + "): ");
+        printFactors(factorsOfFirst);
+        document.write("Factors of second number (" + secondnum + "): ");
+        printFactors(factorsOfSecond);
+        document.write("Sum1: " + sum1 + "<br>");
+        document.write("Sum2: " + sum2 + "<br>");
+        if ((sum1 == secondnum) && (sum2 == firstnum)) {
+          document.write("The numbers: " + firstnum + " and " + secondnum + " are amicable");
+        }
+        else {
+          document.write("The numbers: " + firstnum + " and " + secondnum + " are not amicable");
+        }
+        // document.getElementById("result").value = firstnum;
+      }
+      function getFactors (arr, num) {
+        sum = 0;
+        for (i = 1; i < num; i++) {
+          if (isAFactor(i, num)) {
+            arr.push(i);
+            sum += i;
+          }
+        }
+        return sum;
+      }
+      function isAFactor (x, y) {
+        if (y % x == 0) {
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
+      function printFactors (arr) {
+        for (i = 0; i < arr.length; i++) {
+          document.write(arr[i] + " ");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
