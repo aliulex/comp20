@@ -7,9 +7,8 @@
       First Number: <input type="text" id="first"><br><br>
       Second Number: <input type="text" id="second"><br><br>
       <input type="button" value="Submit" onclick="check()"><br><br>
-      <!-- <div>
-        <p id="result">The numbers: xxx and yyy are amicable</p>
-      </div> -->
+      <div id="result">
+      </div>
     </form>
     <script language="javascript">
       function check () {
@@ -19,19 +18,19 @@
         factorsOfSecond = new Array;
         sum1 = getFactors(factorsOfFirst, firstnum);
         sum2 = getFactors(factorsOfSecond, secondnum);
-        document.write("Factors of first number (" + firstnum + "): ");
-        printFactors(factorsOfFirst);
-        document.write("Factors of second number (" + secondnum + "): ");
-        printFactors(factorsOfSecond);
-        document.write("Sum1: " + sum1 + "<br>");
-        document.write("Sum2: " + sum2 + "<br>");
+        str = "Factors of first number (" + firstnum + "): ";
+        str = printFactors(factorsOfFirst, str);
+        str += "\nFactors of second number (" + secondnum + "): ";
+        str = printFactors(factorsOfSecond, str);
+        alert(str);
         if ((sum1 == secondnum) && (sum2 == firstnum)) {
-          document.write("The numbers: " + firstnum + " and " + secondnum + " are amicable");
+          document.getElementById("result").innerHTML = 
+            "The numbers: " + firstnum + " and " + secondnum + " are amicable";
         }
         else {
-          document.write("The numbers: " + firstnum + " and " + secondnum + " are not amicable");
+          document.getElementById("result").innerHTML = 
+            "The numbers: " + firstnum + " and " + secondnum + " are not amicable";
         }
-        // document.getElementById("result").value = firstnum;
       }
       function getFactors (arr, num) {
         sum = 0;
@@ -51,11 +50,11 @@
           return false;
         }
       }
-      function printFactors (arr) {
+      function printFactors (arr, str) {
         for (i = 0; i < arr.length; i++) {
-          document.write(arr[i] + " ");
+          str += arr[i] + " ";
         }
-        document.write("<br>");
+        return str;
       }
     </script>
   </body>
