@@ -1,0 +1,51 @@
+<html>
+<head>
+    <script type="text/javascript" src="songs.json"></script>
+    <title>JSON Song List</title>
+</head>
+<body>
+    <h1>Set List</h1>
+    <form>
+        Filter by genre:
+        <select name="filter" id="filter">
+            <option value="Pop">Pop</option>
+            <option value="Kpop">Kpop</option>
+            <option value="Jpop">Jpop</option>
+        </select>
+        <input type = "button" name='button' id="button" value = "Filter"/>
+    </form>
+    <div id="display">
+    </div>
+    <script language="javascript">
+        window.onload = function () {
+            songs = data;
+            print();
+            button = document.getElementById("button");
+            button.addEventListener("click", filter);
+        }
+        function print () {
+            str = "";
+            for (i = 0; i < songs.length; i++) {
+                str += "<b>Song: " + songs[i].song + "</b><br>";
+                str += "Artist(s): " + songs[i].artists + "<br>";
+                str += "Genre(s): " + songs[i].genre + "<br>";
+                str += "Year: " + songs[i].year + "<br><br>";
+            }
+            document.getElementById("display").innerHTML = str;
+        }
+        function filter () {
+            genre = document.getElementById("filter").value;
+            result = "";
+            for (i = 0; i < songs.length; i++) {
+                if (songs[i].genre == genre) {
+                    result += "<b>Song: " + songs[i].song + "</b><br>";
+                    result += "Artist(s): " + songs[i].artists + "<br>";
+                    result += "Genre(s): " + songs[i].genre + "<br>";
+                    result += "Year: " + songs[i].year + "<br><br>";
+                }
+            }
+            document.getElementById("display").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

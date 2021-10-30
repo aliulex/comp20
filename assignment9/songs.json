@@ -1,0 +1,62 @@
+data = [
+    {
+        "song": "Lights Down Low",
+        "artists": ["MAX"],
+        "genre": ["Pop"],
+        "year": 2016
+    },
+    {
+        "song": "Closer",
+        "artists": ["Chainsmokers"],
+        "genre": ["Pop"],
+        "year": 2016
+    },
+    {
+        "song": "How Do You Sleep",
+        "artists": ["Sam Smith"],
+        "genre": ["Pop"],
+        "year": 2020
+    },
+    {
+        "song": "Payphone",
+        "artists": ["Maroon 5"],
+        "genre": ["Pop"],
+        "year": 2012
+    },
+    {
+        "song": "Fake Love",
+        "artists": ["BTS"],
+        "genre": ["Kpop"],
+        "year": 2018
+    },
+    {
+        "song": "Flower Road",
+        "artists": ["Big Bang"],
+        "genre": ["Kpop"],
+        "year": 2018
+    },
+    {
+        "song": "Eight",
+        "artists": ["IU"],
+        "genre": ["Kpop"],
+        "year": 2020
+    },
+    {
+        "song": "Gurenge",
+        "artists": ["LiSA"],
+        "genre": ["Jpop"],
+        "year": 2019
+    },
+    {
+        "song": "Crossing Field",
+        "artists": ["LiSA"],
+        "genre": ["Jpop"],
+        "year": 2013
+    },
+    {
+        "song": "Unravel",
+        "artists": ["TK"],
+        "genre": ["Jpop"],
+        "year": 2014
+    }
+]
